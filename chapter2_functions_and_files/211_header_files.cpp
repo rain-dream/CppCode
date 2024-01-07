@@ -21,6 +21,37 @@ We’ll discuss this further when we introduce each of these.
 (1). This allows the compiler to catch certain kinds of errors at compile time instead of link time.
 
 5. Do not #include .cpp files
+
+6. Angled brackets vs double quotes
+(1). Our use of angled brackets vs double quotes helps give the preprocessor a clue as to where it should look for header files.
+
+7. Another commonly asked question is “why doesn’t iostream 
+(or any of the other standard library header files) have a .h extension?”. 
+The answer is that iostream.h is a different header file than iostream! To explain requires a short history lesson.
+
+8. Including header files from other directories
+(1). A better method is to tell your compiler or IDE that you have a bunch of header files in some other location, 
+so that it will look there when it can’t find them in the current directory. 
+This can generally be done by setting an include path or search directory in your IDE project settings.
+
+9. Headers may include other headers
+(1). These additional header files are sometimes called transitive includes, 
+as they’re included implicitly rather than explicitly.
+(2). Each file should explicitly #include all of the header files it needs to compile. 
+Do not rely on headers included transitively from other headers.
+
+10. The #include order of header files
+(1). If your header files are written properly and #include everything they need, the order of inclusion shouldn’t matter.
+
+11. order your #includes as follows:
+The paired header file
+Other headers from your project
+3rd party library headers
+Standard library headers
+The headers for each grouping should be sorted alphabetically 
+(unless the documentation for a 3rd party library instructs you to do otherwise).
+
+12. Header file best practices
 */
 
 int main(){
