@@ -1,4 +1,4 @@
-#include <iomanip>  // Perhaps surprisingly, the C++ standard does not define the exact size (in bits) for any of the fundamental types.
+#include <iomanip>  // for std::setw (which sets the width of the subsequent output)
 #include <iostream>
 
 /*
