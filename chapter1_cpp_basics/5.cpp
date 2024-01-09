@@ -17,6 +17,21 @@ is said to have a side effect.
 the side effect rather than for the return value (if any) those operators produce.
 */
 
+// Introduction to expressions
+/*
+1. An expression statement is a statement that consists of an expression followed by a semicolon. 
+When the expression statement is executed, the expression will be evaluated.
+
+2. Subexpressions, full expressions, and compound expressions
+(1). In casual language, a compound expression is an expression that contains two or more uses of operators.
+*/
+
+// Developing your first program
+
+// Summary and quiz
+/*
+1. You should prefer brace initialization over the other initialization forms, and prefer initialization over assignment.
+*/
 
 int main() {
     int x = {2};
