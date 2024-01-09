@@ -24,5 +24,5 @@ std::cerr is unbuffered, which means anything you send to it will output immedia
 */
 
 int main(){
-
+    return 0;
 }
