@@ -25,9 +25,7 @@ it’s generally best to avoid std::int8_t and std::uint8_t (and the related fas
 6. std::size_t
 (1). Sizeof (and many functions that return a size or length value) return a value of type std::size_t. 
 std::size_t is defined as an unsigned integral type, and it is typically used to represent the size or length of objects.
-(2). sizeof (and many functions that return a size or length value) return a value of type std::size_t. std::size_t is defined as an unsigned integral type, 
-and it is typically used to represent the size or length of objects.
-(3). Some compilers limit the largest creatable object to half the maximum value of std::size_t.
+(2). Some compilers limit the largest creatable object to half the maximum value of std::size_t.
 */
 
 int main(){
