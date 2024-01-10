@@ -3,8 +3,10 @@
 // 4.5 Unsigned integers, and why to avoid them
 /*
 1. Unsigned integer overflow
+(1). wrap around
 
 2. The controversy over unsigned numbers
+(1). Many developers (and some large development houses, such as Google) believe that developers should generally avoid unsigned integers.
 */
 
 int main(){
