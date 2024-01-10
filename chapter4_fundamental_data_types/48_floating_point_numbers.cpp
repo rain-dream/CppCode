@@ -19,6 +19,12 @@ as the lack of precision in a float will often lead to inaccuracies.
 4. Outputting floating point values
 
 5. Rounding errors make floating point comparisons tricky
+
+6. NaN and Inf
+(1). INF stands for infinity, and IND stands for indeterminate. 
+
+Conclusion
+1. Floating point numbers often have small rounding errors, even when the number has fewer significant digits than the precision.
 */
 
 int main(){
