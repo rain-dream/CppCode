@@ -22,6 +22,14 @@ Otherwise, the compiler is free to evaluate the function at either compile-time 
 Such functions are called immediate functions.
 (2). The downside of consteval functions is that such functions can’t evaluate at runtime, 
 making them less flexible than constexpr functions, which can do either.
+(3). Constexpr/consteval functions are implicitlly inline
+constexpr functions are often defined in header files, so they can be #included into any .cpp file that requires the full definition.
+(4). Constexpr/consteval function parameters are not constexpr (but can be used as arguments to other constexpr functions).
+(5). Can a constexpr function call a non-constexpr function?
+The answer is yes, but only when the constexpr function is being evaluated in a non-constant context.
+
+6. Why not constexpr every eligible function?
+(1). Unless you have a specific reason not to, a function that can be made constexpr generally should be made constexpr.
 */
 
 constexpr int greater(int x, int y){
