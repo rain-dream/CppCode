@@ -23,7 +23,7 @@ then each inline expansion will cause the executable to grow larger. Larger exec
 In modern C++, the term inline has evolved to mean “multiple definitions are allowed”. 
 Thus, an inline function is one that is allowed to be defined in multiple files.
 The linker will consolidate all inline function definitions for an identifier into a single definition 
-(thus still meeting the requirements of the one definition rule).
+(thus still meeting the requirements of the one definition rule(ODR)).
 Inline functions are typically defined in header files, 
 where they can be #included into the top of any code file that needs to see the full definition of the identifier.
 This is particularly useful for header-only libraries, 

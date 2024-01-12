@@ -9,7 +9,7 @@ The conversion rules the compiler uses are fairly complex and may yield surprisi
 */
 
 int main(){
-    constexpr bool inBigClassroom = {false};
+    constexpr bool inBigClassroom = {true};
 
     constexpr int classSize = {inBigClassroom ? 30 : 20};
 

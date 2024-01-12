@@ -19,6 +19,9 @@ Otherwise, the compiler is free to evaluate the function at either compile-time 
 
 5. Forcing a constexpr function to be evaluated at compile-time
 (1). Use consteval if you have a function that must run at compile-time for some reason (e.g. performance).
+Such functions are called immediate functions.
+(2). The downside of consteval functions is that such functions can’t evaluate at runtime, 
+making them less flexible than constexpr functions, which can do either.
 */
 
 constexpr int greater(int x, int y){
