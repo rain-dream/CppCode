@@ -6,7 +6,7 @@
 1. In modern C++, C-style string variables are best avoided.
 2. std::string and std::string_view aren’t fundamental types, they’re class types.
 3. If std::string doesn’t have enough memory to store a string,
- it will request additional memory (at runtime) using a form of memory allocation known as dynamic memory allocation. 
+it will request additional memory (at runtime) using a form of memory allocation known as dynamic memory allocation. 
 This ability to acquire additional memory is part of what makes std::string so flexible, but also comparatively slow.
 
 4. It turns out that when using operator>> to extract a string from std::cin, operator>> only returns characters up to 
@@ -37,10 +37,10 @@ int main(){
     This is one of the exception cases where using an entire namespace is generally okay, 
     because the suffixes defined within are unlikely to collide with any of your code. Avoid such using-directives outside of functions in header files.
     */
-    using namespace std::string_literals;  // 
+    using namespace std::string_literals;
     
     std::cout << "Enter your full name: ";
-    std::string name = {};
+    std::string name = "";
     std::getline(std::cin>>std::ws, name);
 
     std::cout << "Your name is " << name << '\n';
