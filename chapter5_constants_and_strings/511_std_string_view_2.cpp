@@ -43,5 +43,5 @@ a std::string_view may or may not be null-terminated.
 */
 
 int main(){
-
+    return 0;
 }
