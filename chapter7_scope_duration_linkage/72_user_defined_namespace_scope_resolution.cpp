@@ -1,4 +1,4 @@
-// #include "add.h"
+#include "add.h"
 
 #include <iostream>
 
@@ -74,7 +74,7 @@ int main(){
 
     Foo::printHelloThere();
 
-    // std::cout << BasicMath::add(4, 4) << '\n';
+    std::cout << BasicMath::add(4, 4) << '\n';
 
     std::cout << Active::add(4, 4) << '\n';
 
